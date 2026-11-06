@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Alberta Trails – Discover scenic walking and biking routes across Alberta.">
+  <title>Prairie Trails</title>
+</head>
+
+<body style="background-color: lightblue;">
+
+  <header class="site-header">
+    <a href="#top" class="site-header__logo">PrairieTrails</a>
+
+    <nav class="site-header__nav" aria-label="Main navigation">
+      <ul class="site-header__nav-list">
+        <li class="site-header__nav-item"><a href="#about">About</a></li>
+        <li class="site-header__nav-item"><a href="#trails">Trails</a></li>
+        <li class="site-header__nav-item"><a href="#contact">Contact Us</a></li>
+        <li class="site-header__nav-item"><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section id="about" class="section section--about" aria-labelledby="about-heading">
+      <div class="container">
+        <h1 id="about-heading">About PrairieTrails</h1>
+        <p>PrairieTrails is a fictional brand that showcases scenic walking and biking trails across the prairies.</p>
+      </div>
+    </section>
+
+    <section id="trails" class="section section--trails" aria-labelledby="trails-heading">
+      <div class="container">
+        <h2 id="trails-heading">Trails</h2>
+
+        <div class="trails-grid">
+          <article class="trail-card trail-card--featured" aria-label="Sunrise Ridge Trail">
+            <h3 class="trail-card__title">Sunrise Ridge Trail</h3>
+            <p class="trail-card__description">A gentle loop with sunrise views over the prairie grasslands.</p>
+          </article>
+
+          <article class="trail-card" aria-label="Riverbend Path">
+            <h3 class="trail-card__title">Riverbend Path</h3>
+            <p class="trail-card__description">Follow the river through cottonwood stands and open fields.</p>
+          </article>
+
+          <article class="trail-card" aria-label="Windflower Route">
+            <h3 class="trail-card__title">Windflower Route</h3>
+            <p class="trail-card__description">Seasonal wildflowers and wide-open skies.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact Us</h2>
+
+        <form class="contact-form" aria-describedby="contact-help">
+          <p id="contact-help">Use this form to send us questions about trails or accessibility.</p>
+
+          <div class="contact-form__group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+
+          <div class="contact-form__group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+
+          <div class="contact-form__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="contact-form__submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <h2 id="faq-heading">FAQ</h2>
+
+        <dl class="faq-list">
+          <div class="faq-list__item">
+            <dt class="faq-list__question">Are the trails beginner-friendly?</dt>
+            <dd class="faq-list__answer">Yes, most routes are suitable for beginners with clear signage.</dd>
+          </div>
+
+          <div class="faq-list__item">
+            <dt class="faq-list__question">Is there accessible parking?</dt>
+            <dd class="faq-list__answer">Designated accessible parking is available at major trailheads.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__text">&copy; 2026 PrairieTrails. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
