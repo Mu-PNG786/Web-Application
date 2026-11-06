@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Trail Enquiry Explore Alberta Trails</title>
+    <meta name="description"
+        content="Send a question about beginner-friendly trails.">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self';">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main id="main">
+        <h1>Trail Enquiry Form</h1>
+
+        <form id="trailForm" novalidate>
+
+            <div>
+                <label for="name">
+                    Name <span aria-hidden="true">*</span>
+                </label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required>
+            </div>
+
+            <div>
+                <label for="email">
+                    Email <span aria-hidden="true">*</span>
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required>
+            </div>
+
+            <div>
+                <label for="trailLength">
+                    Trail Length
+                </label>
+                <select id="trailLength" name="trailLength">
+                    <option value="">Select a trail length</option>
+                    <option value="Short">Short (Under 5 km)</option>
+                    <option value="Medium">Medium (5-10 km)</option>
+                    <option value="Long">Long (10+ km)</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">
+                    Message <span aria-hidden="true">*</span>
+                </label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    maxlength="500"
+                    required></textarea>
+            </div>
+
+            <!-- Accessible error region -->
+            <div
+                id="errors"
+                aria-live="polite"
+                role="status"></div>
+
+            <button type="submit">
+                Submit Enquiry
+            </button>
+
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
